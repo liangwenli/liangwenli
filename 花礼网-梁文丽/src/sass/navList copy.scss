@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+.navList {
+    background-color: #ffffff;
+    height: 40px;
+    border-bottom: 3px solid #fe7a24;
+    $colorred: #373737;
+    $colorNav: #737373; // div{
+
+    %setHover {
+        color: #fe7a24;
+        text-decoration: underline; //下划线
+    }
+
+    %setHoverm {
+        display: block;
+    }
+
+    //使用@extend %setHoverm;
+
+    //     color: $colorred;
+    // }
+    // h2{
+    //     color: $colorred;
+    // }
+    .navCon {
+        width: 1200px;
+        margin: auto;
+
+        .navList {
+            width: 100%;
+            height: 40px;
+
+
+            .guide {
+                width: 230px;
+                height: 40px;
+                position: relative;
+                z-index: 1;
+                box-sizing: border-box;
+
+                h3 {
+                    height: 100%;
+                    width: 100%;
+                    line-height: 40px;
+                    color: #ffffff;
+                    padding-left: 6px;
+                    background-color: #ff6a00;
+                    box-sizing: border-box;
+                }
+
+                .guideList {
+                    position: absolute;
+                    top: 40px;
+                    left: 0px;
+                    width: 100%;
+                    background-color: #fff;
+                    padding: 6px;
+                    box-sizing: border-box;
+                    height: 486px;
+                    border-top: 3px solid #fe7a24;
+                    ;
+
+                    .drop {
+                        // position: relative;
+                        font-size: 12px;
+                        color: #737373;
+                        border-bottom: 1px solid #737373;
+                        padding-left: 20px;
+
+                        // padding-bottom: 16px;
+                        box-sizing: border-box;
+                        // margin: -9px -15px 0 -15px;
+
+                        h4 {
+                            color: #ff6a00;
+                            padding-top: 8px;
+                            font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                            font-size: 14px;
+                            font-weight: bold;
+                            line-height: 38px;
+
+                        }
+
+
+
+                        .icon-xia:before {
+                            content: "\e61a";
+                        }
+
+                        ul {
+                            li {
+                                float: left;
+                                font-size: 12px;
+                                line-height: 20px;
+                                margin-right: 10px;
+                                padding: 0;
+
+                                a {
+                                    color: $colorNav;
+
+                                    &:hover {
+                                        @extend %setHover;
+                                    }
+                                }
+
+
+                            }
+                        }
+
+                        .useList li:nth-child(3n) {
+                            margin-right: 0px;
+                        }
+
+                        h3 {
+                            color: #ff6a00;
+                        }
+
+                        .muen {
+                            position: absolute;
+                            top: 2px;
+                            left: 226px;
+                            width: 730px;
+                            height: 470px;
+                            background-color: #fff;
+                            display: none;
+                            padding: 10px;
+                            box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.175);
+                            // box-sizing: border-box;
+                            z-index: 1;
+
+                            a {
+                                color: $colorNav;
+
+                                &:hover {
+                                    @extend %setHover;
+                                }
+                            }
+
+                            span {
+                                color: $colorNav;
+
+                                &:hover {
+                                    @extend %setHover;
+                                }
+                            }
+
+                            h5 {
+                                // font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                                font-size: 12px;
+                                font-weight: bold;
+                                margin-top: 0;
+                                margin-bottom: 12px;
+                                padding-left: 8px;
+                                color: #707070;
+                                border-left: 2px solid #707070;
+                            }
+
+                            li {
+                                float: left;
+
+                            }
+
+                            .link-img {
+                                margin-bottom: 20px;
+                                margin-right: 20px;
+
+                                a {
+                                    color: $colorred;
+                                    position: relative;
+                                    z-index: 9;
+                                    display: block;
+                                    float: left;
+                                    width: 98px;
+                                    height: 86px;
+                                    margin-right: -1px;
+                                    text-align: center;
+                                    margin-bottom: 10px;
+                                    border: 1px solid #e5e5e5;
+
+                                    img {
+                                        width: 96px;
+                                        height: 62px;
+                                    }
+                                }
+
+
+                            }
+
+                            .h5 {
+                                margin-top: 210px;
+                                width: 100px;
+                                height: 20px;
+
+
+                            }
+
+                            .link-text {
+                                // margin-top: 200px;
+                                width: 100%;
+
+
+                                a {
+                                    color: $colorred;
+                                    line-height: 20px;
+                                    display: block;
+                                    float: left;
+                                    margin-right: 8px;
+                                    // display: inline-block;
+                                    // -webkit-box-shadow: none;
+                                    // box-shadow: none;
+                                }
+
+                                a {
+                                    color: $colorNav;
+
+                                    &:hover {
+                                        @extend %setHover;
+                                    }
+                                }
+                            }
+
+                            .gz {
+                                margin-top: 120px;
+                            }
+                        }
+
+                    }
+
+                    // .drop1 {
+
+                    // }
+
+                    .immortal:hover .imList {
+                        display: block;
+
+                    }
+
+                    .gif:hover .ifList {
+                        display: block;
+
+                    }
+
+                    .bir:hover .birList {
+                        display: block;
+
+                    }
+
+                    .jia:hover .jiaList {
+                        display: block;
+
+                    }
+
+                    .drop1 {
+                        z-index: 99;
+                    }
+
+                    .drop1:hover {
+                        box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.175);
+                        z-index: 9;
+                        background-color: #fff;
+
+
+                    }
+
+                    // .drop1 {
+                    // }
+
+                }
+            }
+        }
+
+        .navRight {
+            width: 970px;
+            height: 40px;
+
+            li {
+                float: left;
+                line-height: 40px;
+                padding: 0px 20px;
+
+                a {
+                    color: $colorred;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: #fe7a24;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.footer .footerCon {
+  width: 1200px;
+  margin: auto;
+  font-size: 12px; }
+  .footer .footerCon .footerNav {
+    margin-top: 30px; }
+    .footer .footerCon .footerNav ul li {
+      color: #737373;
+      float: left; }
+      .footer .footerCon .footerNav ul li a {
+        color: #737373; }
+      .footer .footerCon .footerNav ul li i {
+        padding: 0px 30px; }
+  .footer .footerCon .auth {
+    text-align: center;
+    margin: 20px 0px; }
+    .footer .footerCon .auth img {
+      margin-right: 10px; }
+  .footer .footerCon div {
+    text-align: center;
+    line-height: 20px; }
+    .footer .footerCon div a {
+      color: #737373; }
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,55 @@
+.footer {
+    .footerCon {
+        width: 1200px;
+        margin: auto;
+        font-size: 12px;
+
+        .footerNav {
+            margin-top: 30px;
+
+
+            ul {
+                li {
+
+                    color: #737373;
+                    float: left;
+
+                    a {
+                        color: #737373;
+                    }
+
+                    i {
+                        padding: 0px 30px;
+                    }
+                }
+            }
+
+            // ul li:not(.nav){
+
+            // }
+
+        }
+
+        .auth {
+            text-align: center;
+            margin: 20px 0px;
+
+            img {
+                margin-right: 10px;
+            }
+
+        }
+
+        div {
+            text-align: center;
+            line-height: 20px;
+
+            a {
+                color: #737373;
+            }
+        }
+
+    }
+
+
+}

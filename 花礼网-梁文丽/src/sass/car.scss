@@ -1,0 +1,560 @@
+@charset "utf-8";
+@import 'footer';
+@import 'header';
+
+.main {
+    width: 1000px;
+    margin: auto;
+
+    .goodbox {
+        margin-bottom: 20px;
+        border: 1px solid #d9d9d9;
+
+        .hd {
+            margin: 0;
+            padding: 0 20px;
+            list-style: none;
+            background-color: #ebebeb;
+
+            .order-title {
+                li {
+                    font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                    font-weight: bold;
+                    // display: inline-block;
+                    float: left;
+                    padding: 10px 0;
+                }
+
+                .selecter {
+                    width: 36px;
+                    height: 40px;
+                }
+
+                .operate {
+                    width: 60px;
+                }
+
+                .product {
+                    width: 432px;
+                }
+
+                .market-price,
+                .num {
+                    width: 120px;
+                }
+
+                .order-price {
+                    width: 120px;
+                }
+            }
+
+        }
+
+        .bd {
+            margin: 0;
+            padding: 0 20px;
+
+            .order-list {
+                font-size: 14px;
+                margin: 0;
+                padding: 15px 0;
+                border-top: 2px dotted #d9d9d9;
+
+                li {
+                    line-height: 20px;
+                    // display: inline-block;
+                    float: left;
+
+                    img {
+                        height: 64px;
+                        width: 64px;
+                    }
+                }
+
+                .selecter {
+                    width: 36px;
+                    height: 88px;
+                    text-align: left;
+                    cursor: pointer;
+
+                    input {
+                        width: 20px;
+                        height: 20px;
+                        margin-top: 34px;
+                    }
+
+                }
+
+                .img-box {
+                    width: 100px;
+                }
+
+                .product {
+                    width: 332px;
+                    padding: 24px 0;
+
+                    p {
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        line-height: 40px;
+
+                        &:hover {
+                            text-decoration: underline; //下划线
+                            color: #ff6a00;
+                        }
+                    }
+
+                }
+
+                .market-price {
+                    // width: 120px;
+                    margin-right: 70px;
+                    padding: 0;
+                    line-height: 88px;
+                    text-decoration: line-through;
+                    color: #999999;
+
+                }
+
+                .order-price {
+                    // width: 120px;
+                    margin-right: 76px;
+                    padding: 0;
+                    line-height: 88px;
+                    color: #232628;
+                    font-weight: normal;
+                }
+
+                .num {
+                    // width: 120px;
+                    margin: 32px 0;
+
+                    span {
+                        width: 10px;
+                        // height: 11px;
+                        // margin: -2px 0 0;
+                        padding: 0;
+                        text-align: center;
+                        display: block;
+                        float: left;
+                        line-height: 24px;
+                        border: 1px solid #cccccc;
+                        //    margin-top: 10px;
+                    }
+
+                    .cut {
+                        margin-right: 10px;
+                    }
+
+                    input {
+                        float: left;
+                        display: inline-block;
+                        width: 20px;
+                        height: 24px;
+                        border: 1px solid #cccccc;
+                        text-align: center;
+                        margin-right: 10px;
+                    }
+                }
+
+                .operate {
+                    // width: 60px;
+
+                    .del {
+                        width: 30px;
+                        display: block;
+                        font-size: 12px;
+                        padding: 34px 0 24px 0px;
+                        margin-left: 60px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .set-bar {
+        .set-info {
+            font-size: 12px;
+            line-height: 52px;
+            float: left;
+            width: 870px;
+            height: 52px;
+            padding: 0 20px;
+            border: 1px solid #d9d9d9;
+            border-right: 0;
+            box-sizing: border-box;
+
+            .back {
+                width: 90px;
+                color: #737373;
+                text-decoration: none;
+
+                &:hover {
+                    color: #ff6a00;
+                    text-decoration: underline;
+                }
+
+                span {
+                    margin-top: -6px;
+                    margin-right: 5px;
+                }
+
+                .icon-shangyiye:before {
+                    content: "\e616";
+
+                }
+            }
+
+            .set-stat {
+                font-size: 18px;
+                font-weight: bold;
+                display: inline-block;
+                color: #ff6a00;
+
+                .price {
+                    font-size: 18px;
+                    font-weight: bold;
+                    display: inline-block;
+                    color: #ff6a00;
+                }
+
+            }
+
+        }
+
+
+
+        .btn {
+            font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
+            font-weight: bold;
+            float: right;
+            width: 130px;
+            height: 52px;
+            color: #ffffff;
+            background-color: #ff6a00;
+            border-color: #ff6a00;
+        }
+    }
+}
+
+
+.mui-mbar-tabs {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 34px;
+    height: 100%;
+    background-color: #fff;
+    margin-left: 100px;
+    // background-color: #595656;
+    background-color: #595656;
+    height: 1000px;
+    z-index: 99;
+
+    .con {
+        width: 34px;
+        box-sizing: border-box;
+        color: #ffffff;
+        text-align: center;
+        line-height: 30px;
+
+        span {
+            font-size: 20px;
+        }
+
+        .top {
+            margin-top: 100px;
+
+            width: 34px;
+
+            ul {
+
+                .a {
+                    border-top: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                }
+
+                .num {
+                    display: block;
+                    height: 26px;
+                    width: 26px;
+                    text-align: center;
+                    line-height: 26px;
+                    border-radius: 50%;
+                    background: #ff6600;
+                    color: #fff;
+                }
+
+                li {
+                    width: 34px;
+
+                    box-sizing: border-box;
+                    padding: 0px 4px;
+                    margin-top: 10px;
+
+                    span {
+                        color: #ccc;
+
+                    }
+                }
+
+
+                .li1 {
+                    position: relative;
+
+
+                    .geren {
+                        display: none;
+                        position: absolute;
+                        top: 0px;
+                        left: -200px;
+                        width: 200px;
+                        background-color: #fff;
+                        padding: 20px 0px;
+
+                        img {
+                            text-align: center;
+                            // display: block;
+                        }
+
+                        .tt {
+
+
+                            p {
+                                margin-top: 20px;
+                                color: black;
+
+                                a {
+                                    color: #ff6600;
+                                }
+                            }
+                        }
+
+                    }
+
+
+                }
+
+                .li1:hover .geren {
+                    display: block;
+                }
+
+                .li2:hover {
+                    background-color: #ff6600;
+                }
+
+                .li2:hover .num {
+                    background-color: #fff;
+                    color: #ff6600;
+                }
+
+                .li3 {
+                    position: relative;
+
+                    .shou {
+                        width: 100px;
+                        line-height: 30px;
+                        font-size: 12px;
+                        display: none;
+                        position: absolute;
+                        top: 0px;
+                        left: -100px;
+                        color: black;
+                        background-color: #fff;
+                    }
+                }
+
+                .li3:hover .shou {
+                    display: block;
+                }
+
+                .li4 {
+                    position: relative;
+
+                    .shou {
+                        width: 100px;
+                        line-height: 30px;
+                        font-size: 12px;
+                        display: none;
+                        position: absolute;
+                        top: 0px;
+                        left: -100px;
+                        color: black;
+                        background-color: #fff;
+                    }
+                }
+
+                .li4:hover .shou {
+                    display: block;
+                }
+
+                .li5 {
+                    position: relative;
+
+                    .shou {
+                        width: 100px;
+                        line-height: 30px;
+                        font-size: 12px;
+                        display: none;
+                        position: absolute;
+                        top: 0px;
+                        left: -100px;
+                        color: black;
+                        background-color: #fff;
+                    }
+                }
+
+                .li5:hover .shou {
+                    display: block;
+                }
+
+                .li6 {
+                    position: relative;
+
+                    .shou {
+                        width: 100px;
+                        line-height: 30px;
+                        font-size: 12px;
+                        display: none;
+                        position: absolute;
+                        top: 0px;
+                        left: -100px;
+                        color: black;
+                        background-color: #fff;
+                    }
+                }
+
+                .li6:hover .shou {
+                    display: block;
+                }
+            }
+
+            .icon-gerensvg:before {
+                content: "\e614";
+                // margin-bottom: 20px;
+
+            }
+
+            .icon-gouwuche:before {
+                content: "\e621";
+            }
+
+            .icon-icon-test:before {
+                content: "\e62a";
+            }
+
+            .icon-shizhong:before {
+                content: "\e66e";
+            }
+
+            .icon-weibiao:before {
+                content: "\e60d";
+            }
+
+            .icon-erji:before {
+                content: "\e711";
+            }
+
+        }
+
+        .btn {
+            // height: 100px;
+            width: 100%;
+            margin-bottom: 40px;
+
+            ul {
+                li {
+                    // position: relative;
+                    // top: 0;
+                    // left: 0;
+                    // display: block;
+                    margin-top: 10px;
+                    width: 34px;
+                    height: 30px;
+
+                    span {
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                    .icon-erweima:before {
+                        content: "\e630";
+                    }
+
+                    .icon-jibiji:before {
+                        content: "\e609";
+                    }
+
+                    .icon-icon-:before {
+                        content: "\e608";
+                    }
+                }
+
+                .li7 {
+                    position: relative;
+
+                    .app {
+                        display: none;
+                        position: absolute;
+                        top: 0px;
+                        left: -200px;
+                        width: 200px;
+                        height: 140px;
+                        box-sizing: border-box;
+                        color: black;
+                        font-size: 12px;
+                        text-align: center;
+                        background-color: #fff;
+                        padding: 10px;
+
+                        div {
+                            float: left;
+                            margin-right: 10px;
+                            ;
+                        }
+
+                        img {
+                            width: 80px;
+                            height: 80px;
+                            display: block;
+                        }
+                    }
+                }
+
+                .li7:hover .app {
+                    display: block;
+                    -webkit-transform: translateX(-5px);
+                    transition: all 0.3s;
+                }
+
+                .li8 {
+                    position: relative;
+
+                    .shou {
+                        width: 100px;
+                        line-height: 30px;
+                        font-size: 12px;
+                        display: none;
+                        position: absolute;
+                        top: 0px;
+                        left: -100px;
+                        color: black;
+                        background-color: #fff;
+                    }
+                }
+
+                .li8:hover .shou {
+                    display: block;
+                }
+
+                .li9 {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+
+
+}

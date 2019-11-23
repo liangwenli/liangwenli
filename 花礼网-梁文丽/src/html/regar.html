@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>regar</title>
+    <link rel="stylesheet" href="../css/css/base.css">
+    <link rel="stylesheet" href="../css/iconfont1/iconfont.css">
+    <link rel="stylesheet" href="../css/css/regar.css">
+
+</head>
+
+<body>
+    <div class="login">
+        <div class="loginHeader">
+            <!-- <iframe src="header.html" id="iframe-regar" frameborder='0' style="width:100%;"></iframe> -->
+        </div>
+        <main class="loginMain">
+            <div class="mainCon">
+                <div class="loginBox">
+                    <ul class="login-tabs clearfix">
+                        <li>手机注册</li>
+
+                    </ul>
+                    <div class="tabs">
+                        <!-- 短信登录 -->
+                        <div class="attr2 conbox">
+                            <div class="account inputBox input1"><span>账号</span><input type="text" placeholder="请输入手机号">
+                                <span class="pan1"></span>
+                            </div>
+                            <div class="password inputBox ma">
+                                <input type="text" placeholder="请输入验证码" id="text1">
+                                <input type="button" value="0320" class="btn" id="btn1">
+                                <span class="pan"></span>
+                            </div>
+                            <div class="password inputBox">
+                                <!-- <span class="yanzhengma">验证码</span> -->
+                                <input type="text" placeholder="请输入手机验证码">
+                                <input type=" button" value="验证码" class="btn">
+                            </div>
+                            <div class="account inputBox"><span>密码</span><input type="password" placeholder="请输入密码">
+                            </div>
+                            <p></p>
+                            <div class="flie">
+                                <!-- <a href="" class="fr">忘记密码？</a> -->
+                            </div>
+                            <input type="button" class="login-btn" value="登录 / 注册">
+                            <span class="form-tip">已有账号去登陆</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="mainFooter">
+     
+        </footer>
+    </div>
+
+
+</body>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../lib/myquery.js"></script>
+<script src="../js/regar.js"></script>
+
+
+<script>
+    (function () {
+
+        //$().load() 都是$.ajax()封装，需要发送请求，记得要用环境打开
+        $('.loginHeader').load('head.html', function () {
+            // //异步的操作：没有加载完成，事件是无法绑定的
+            let loginbtn = document.getElementById('loginbtn');
+            let out = document.querySelector('#out');
+        
+            loginbtn.onclick = function () {
+                location.href = 'login.html';
+            }
+
+            out.onclick = function () {
+                removeCookie('username');
+                location.href = 'login.html';
+            }
+        });
+
+        // $('#right').load('html/right.html');
+        $('.mainFooter').load('footer1.html');
+
+        let toTop = document.querySelector('.btn .toTop');
+        toTop.onclick = function () {
+            window.scrollTo(0, 0);
+        }
+
+
+    })();
+</script>
+
+</html>

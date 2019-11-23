@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+.login {
+
+
+    .loginMain {
+
+        background-color: pink;
+
+
+        // background-image: url(//img02.hua.com/pc/assets/img/login_bg.jpg);
+        // background-size: cover;
+        // background-position: 50% 0;
+        // background-repeat: no-repeat;
+        .mainCon {
+
+            width: 1200px;
+            height: 474px;
+            margin: auto;
+
+
+            .loginBox {
+                position: relative;
+                width: 440px;
+                height: 438px;
+                float: right;
+                background: #fff;
+                margin-top: 18px;
+                font-size: 18px;
+
+                .login-tabs {
+                    width: 100%;
+                    height: 56px;
+                    margin-top: 20px;
+
+                    li {
+                        line-height: 64px;
+                        font-size: 22px;
+                        color: #232628;
+                        text-align: center;
+
+                    }
+
+                    .active {
+                        color: #ff6a00;
+                    }
+
+                    .zhanghao {
+                        margin: 0px 10px;
+                    }
+                }
+
+                .tabs {
+                    padding: 20px 60px 0;
+                    text-align: center;
+
+                    //短信验证
+                    .attr2 {
+                        .inputBox {
+                            position: relative;
+                            width: 100%;
+                            // height: 42px;
+                            border: 1px solid #B4BABF;
+                            border-radius: 2px;
+                            margin-bottom: 12px;
+                            font-size: 0;
+
+
+                            .yanzhengma {
+                                width: 80px;
+                                height: 100%;
+                            }
+
+
+
+
+                            // span {
+                            //     display: block;
+                            //     width: 262px;
+                            //     height: 40px;
+                            //     line-height: 40px;
+                            //     padding: 10px 14px;
+                            //     // vertical-align: top;
+                            //     font-size: 14px;
+                            //     color: #232628;
+                            //     border-right: 1px solid #232628;
+                            // }
+
+                            input {
+                                width: 262px;
+                                height: 40px;
+                                // margin-left: 6px;
+                                vertical-align: top;
+                                font-size: 14px;
+                                color: #232628;
+                            }
+
+                            .password {
+                                position: relative;
+                            }
+
+                            .btn {
+                                width: 100px;
+                                height: 100%;
+                                position: absolute;
+                                top: 0px;
+                                right: -1px;
+                                background-color: #cccccc;
+                                text-align: center;
+                            }
+
+                            .flie {
+                                height: 30px;
+                            }
+
+
+
+                        }
+
+                        .ma {
+                            position: relative;
+                            height: 42px;
+
+                            .pan {
+                                display: block;
+                                height: 50px;
+                                width: 50px;
+                                position: absolute;
+                                top: 0px;
+                                right: -50px;
+                                line-height: 42px;
+                                // color: #ff6a00 !important;
+                                font-size: 20px;
+                            }
+                        }
+
+                        .input1 {
+                            .pan1 {
+                                display: block;
+                                height: 50px;
+                                width: 50px;
+                                position: absolute;
+                                top: 0px;
+                                right: -50px;
+                                line-height: 42px;
+                                // color: #ff6a00 !important;
+                                font-size: 20px;
+                            }
+                        }
+
+                        .flie {
+                            font-size: 12px;
+                            margin-bottom: 20px;
+
+                            a {
+                                color: #232628;
+                            }
+
+                        }
+
+                        .login-btn {
+                            margin-bottom: 20px;
+                            height: 42px;
+                            line-height: 42px;
+                            font-size: 14px;
+                            color: #fff;
+                            background-color: #ff6a00;
+                            width: 100%;
+                            border-radius: 21px;
+                            text-align: center;
+                        }
+
+                        .form-tip {
+                            border-radius: 15px;
+                            display: block;
+                            line-height: 30px;
+                            background-color: #cccccc;
+                            color: #232628;
+                            font-size: 16px;
+                            -moz-user-select: none;
+                            /*火狐*/
+                            -webkit-user-select: none;
+                            /*webkit浏览器*/
+                            -ms-user-select: none;
+                            /*IE10*/
+                            -khtml-user-select: none;
+                            /*早期浏览器*/
+                            user-select: none;
+                        }
+
+
+                    }
+
+
+                }
+
+
+            }
+        }
+    }
+
+
+
+}

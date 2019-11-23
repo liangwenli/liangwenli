@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>car</title>
+    <link rel="stylesheet" href="../css/css/base.css">
+    <link rel="stylesheet" href="../css/css/car.css">
+</head>
+
+<body>
+    <header class="header">
+
+    </header>
+    <main class="main">
+        <div class="goodbox">
+            <div class="hd ">
+                <ul class="order-title clearfix">
+                    <li class="selecter"></li>
+                    <li class="product">商品名称</li>
+                    <li class="market-price">市场价</li>
+                    <li class="order-price">订购价</li>
+                    <li class="num">数量</li>
+                    <li class="operate">操作</li>
+                </ul>
+            </div>
+            <div class="bd">
+                <!-- <ul class="order-list clearfix" id=""> -->
+                <!-- <li class="selecter">
+                        <input type="checkbox">
+                    </li>
+                    <li class="img-box">
+                        <img src="../img/images/gifts-chocolates.png" alt="">
+                    </li>
+                    <li class="product">
+                        <p>[礼品]我如此爱你-口红款999一专柜正品Dior#999口红＋进口永生玫瑰礼盒</p>
+
+                    </li>
+                    <li class="market-price">
+                        <span>￥</span>
+                        <span class="price">788</span>
+                    </li>
+                    <li class="order-price">
+                        <span>￥</span>
+                        <span class="price">788</span></li>
+                    <li class="num">
+                        <div class="input-num clearfix">
+                            <span class="cut">-</span>
+                            <input type="text" value="1">
+                            <span class="add">+</span>
+                        </div>
+                    </li>
+                    <li class="operate">
+                        <span>删除</span>
+                    </li> -->
+                <!-- </ul> -->
+
+            </div>
+        </div>
+        <div class="set-bar clearfix">
+            <div class="set-info clearfix">
+                <a href="list.html" class="back fl">
+                    <span class="icon icon-shangyiye">继续挑选</span>
+                </a>
+                <div class="set-stat fr">
+                    应付金额
+                    <div class="price">
+                        <span>￥</span>
+                        <span class="price-num"> 0</span>
+                    </div>
+                </div>
+            </div>
+            <button class="btn">去结算</button>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+    <div class="mui-mbar-tabs">
+        <div class="con">
+            <div class="top">
+                <ul>
+                    <li class="li1">
+                        <!-- <i class="iconfont icongerensvg"></i> -->
+                        <span class="icon icon-gerensvg"></span>
+                        <div class="geren">
+                            <img src="../img/images/avatar_none.jpg" alt="">
+                            <div class="tt">
+                                <!-- <p>你好！请你<a href="../html/regar.html">注册</a>|<a href="../html/login/html">登录</a></p> -->
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="a li2">
+                        <span class="icon icon-gouwuche"></span>
+                        购物车
+                        <span class="num">0</span>
+                    </li>
+                    <li class="li3">
+                        <span class="icon icon-icon-test"></span>
+                        <div class="shou">我的收藏</div>
+                    </li>
+                    <li class="li4">
+                        <span class="icon  icon-shizhong"></span>
+                        <div class="shou">浏览足迹</div>
+                    </li>
+                    <li class="li5">
+                        <span class="icon icon-weibiao"></span>
+                        <div class="shou"> 400-889-818</div>
+                    </li>
+                    <li class="li6">
+                        <span class="icon icon-erji"></span>
+                        <div class="shou">在线客服</div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="btn">
+                <ul>
+                    <li class="li7">
+                        <span class="icon icon-erweima"></span>
+                        <div class="app">
+                            <div>
+                                <img src="../img/weixin.jpg" alt="">
+                                公众微信号
+                            </div>
+                            <div>
+                                <img src="../img/app_qrcode.jpg" alt="">
+                                下载花礼app
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li8">
+                        <span class="icon icon-jibiji"></span>
+                        <div class="shou">用户反馈</div>
+                    </li>
+                    <li class="li9"><span class="icon icon-icon- toTop"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../lib/jquery-1.10.1.min.js"></script>
+<script src="../lib/myquery.js"></script>
+<script src="../js/car.js"></script>
+<script>
+    let toTop = document.querySelector('.btn .toTop');
+    toTop.onclick = function () {
+        window.scrollTo(0, 0);
+    }
+    let gouss = document.querySelector('.top .li2');
+    gouss.onclick = function () {
+        location.href = 'car.html';
+    }
+</script>
+
+</html>

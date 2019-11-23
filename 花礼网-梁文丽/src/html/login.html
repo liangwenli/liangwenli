@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/css/base.css">
+    <link rel="stylesheet" href="../css/css/login.css">
+    <link rel="stylesheet" href="../css/iconfont1/iconfont.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="loginHeader">
+
+        </div>
+        <main class="loginMain">
+            <div class="mainCon">
+                <div class="loginBox">
+                    <ul class="login-tabs clearfix">
+                        <li>扫码登陆</li>
+                        <li class="zhanghao">账号密码登录</li>
+                        <li>手机登录</li>
+                    </ul>
+                    <div class="tabs">
+                        <!-- 微信 -->
+                        <div class="weixin conbox" style="display: block;">
+                            <img src="../img/weixin.jpg" alt="">
+                            <p>微信扫码，一秒登录</p>
+                        </div>
+                        <!-- 账号 -->
+                        <div class="inputBoxs attr1 conbox">
+                            <div class="account inputBox"><span>账号</span><input type="text" placeholder="请输入花礼账号或邮箱"
+                                    id="zhanghao">
+                            </div>
+                            <div class="password inputBox">
+                                <span>密码</span><input type="password" placeholder="请输入花礼密码" id="password">
+                            </div>
+                            <div class="flie clearfix">
+                                <a href="" class="fr">忘记密码？</a>
+                            </div>
+                            <input type="button" class="login-btn" value="登录" id="login-btn">
+                        </div>
+                        <!-- 短信登录 -->
+                        <div class="attr2 conbox">
+                            <div class="account inputBox"><span>账号</span><input type="text" placeholder="请输入手机号">
+                            </div>
+                            <div class="password inputBox">
+                                <span>密码</span><input type="text" placeholder="请输入手机验证码">
+                                <input type="button" value="验证码" class="btn">
+                            </div>
+                            <p></p>
+                            <div class="flie">
+                                <!-- <a href="" class="fr">忘记密码？</a> -->
+                            </div>
+                            <input type="button" class="login-btn" value="登录 / 注册">
+                            <p class="form-tip">首次登录将自动创建账号</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </main>
+        <footer class="mainFooter">
+        </footer>
+    </div>
+</body>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../lib/myquery.js"></script>
+<script>
+    (function () {
+
+        //点击那个就那个高亮，并且切换到对应的内容
+        $('.login-tabs li').click(function () { //绑定事件：作用于集合
+            //点击的时候触发
+            console.log($(this));
+            $(this).attr('class', 'active').siblings().attr('class', ' '); //点击的按钮高亮显示
+            //排他
+            let index = $(this).index();
+            $('.tabs .conbox').eq(index) //找到对应的div盒子，跟着显示
+                .css('display', 'block')
+                .siblings() //排他
+                .css('display', 'none');
+
+
+
+        });
+
+
+        //$().load() 都是$.ajax()封装，需要发送请求，记得要用环境打开
+        $('.loginHeader').load('head.html', function () {
+            // //异步的操作：没有加载完成，事件是无法绑定的
+            // $('.header').click(() => {
+            //     alert(5566);
+            // });
+
+            let loginbtn = document.getElementById('loginbtn');
+            let out = document.querySelector('#out');
+
+            loginbtn.onclick = function () {
+                location.href = 'login.html';
+            }
+
+            out.onclick = function () {
+                removeCookie('username');
+                location.href = 'login.html';
+            }
+
+        });
+
+        $('.mainFooter').load('footer1.html');
+
+
+        //登录
+        let name = document.getElementById('zhanghao');
+        let password = document.getElementById('password');
+        let login = document.getElementById('login-btn');
+        // console.log(login);
+        login.onclick = function () {
+            let username = name.value.trim();
+            let pass = password.value.trim();
+            if (username && password) {
+                let url = '../api/check.php';
+                let str1 = `SELECT *FROM useinf WHERE tel=${username} AND password='${pass}'`;
+                ajax({
+                    type: 'post',
+                    url: url,
+                    data: {
+                        sql1: str1
+                    },
+                    success: str => {
+                        console.log(str);
+                        let nnn = getCookie('username');
+                        if (nnn) {
+                            alert('您已经登录');
+                            location.href = '../index.html?';
+                        } else if (str == 0) {
+                            setCookie('username', username, 1);
+                            location.href = '../index.html?' + username;
+                        } else {
+                            alert('密码或者用户名不正确');
+                        }
+                    }
+                });
+
+            } else {
+                alert('请输入用户名和密码');
+
+            }
+
+        }
+
+
+
+
+    })();
+</script>
+
+</html>

@@ -1,0 +1,141 @@
+.login .loginMain {
+  background-color: pink;
+  height: 474px; }
+  .login .loginMain .mainCon {
+    width: 1200px;
+    margin: auto; }
+    .login .loginMain .mainCon .loginBox {
+      position: relative;
+      width: 440px;
+      height: 438px;
+      float: right;
+      background: #fff;
+      margin-top: 18px;
+      font-size: 18px; }
+      .login .loginMain .mainCon .loginBox .login-tabs {
+        position: relative;
+        width: 100%;
+        height: 56px;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 2px solid #cccccc; }
+        .login .loginMain .mainCon .loginBox .login-tabs li {
+          width: 33.33333333%;
+          height: 100%;
+          line-height: 56px;
+          font-size: 18px;
+          text-align: center;
+          color: #232628; }
+        .login .loginMain .mainCon .loginBox .login-tabs .active {
+          color: #ff6a00; }
+        .login .loginMain .mainCon .loginBox .login-tabs .zhanghao {
+          margin: 0px 10px; }
+      .login .loginMain .mainCon .loginBox .tabs {
+        padding: 20px 60px 0;
+        text-align: center;
+        margin-top: 20px; }
+        .login .loginMain .mainCon .loginBox .tabs .weixin {
+          display: block; }
+          .login .loginMain .mainCon .loginBox .tabs .weixin img {
+            width: 100px;
+            height: 100%; }
+          .login .loginMain .mainCon .loginBox .tabs .weixin p {
+            font-size: 18px;
+            color: #232628;
+            line-height: 25px;
+            margin-top: 26px; }
+        .login .loginMain .mainCon .loginBox .tabs .conbox {
+          display: none; }
+        .login .loginMain .mainCon .loginBox .tabs .inputBoxs .inputBox {
+          position: relative;
+          width: 100%;
+          height: 42px;
+          border: 1px solid #B4BABF;
+          border-radius: 2px;
+          margin-bottom: 12px;
+          font-size: 0; }
+          .login .loginMain .mainCon .loginBox .tabs .inputBoxs .inputBox span {
+            width: 262px;
+            height: 40px;
+            line-height: 40px;
+            padding: 10px 14px;
+            vertical-align: top;
+            font-size: 14px;
+            color: #232628;
+            border-right: 1px solid #232628; }
+          .login .loginMain .mainCon .loginBox .tabs .inputBoxs .inputBox input {
+            width: 262px;
+            height: 40px;
+            vertical-align: top;
+            font-size: 14px;
+            color: #232628; }
+          .login .loginMain .mainCon .loginBox .tabs .inputBoxs .inputBox .flie {
+            height: 30px; }
+        .login .loginMain .mainCon .loginBox .tabs .inputBoxs .flie {
+          font-size: 14px;
+          margin-bottom: 20px; }
+          .login .loginMain .mainCon .loginBox .tabs .inputBoxs .flie a {
+            color: #232628; }
+        .login .loginMain .mainCon .loginBox .tabs .inputBoxs .login-btn {
+          height: 42px;
+          line-height: 42px;
+          font-size: 14px;
+          color: #fff;
+          background-color: #ff6a00;
+          width: 100%;
+          border-radius: 21px;
+          text-align: center; }
+        .login .loginMain .mainCon .loginBox .tabs .attr2 .inputBox {
+          position: relative;
+          width: 100%;
+          height: 42px;
+          border: 1px solid #B4BABF;
+          border-radius: 2px;
+          margin-bottom: 12px;
+          font-size: 0; }
+          .login .loginMain .mainCon .loginBox .tabs .attr2 .inputBox span {
+            width: 262px;
+            height: 40px;
+            line-height: 40px;
+            padding: 10px 14px;
+            vertical-align: top;
+            font-size: 14px;
+            color: #232628;
+            border-right: 1px solid #232628; }
+          .login .loginMain .mainCon .loginBox .tabs .attr2 .inputBox input {
+            width: 262px;
+            height: 40px;
+            vertical-align: top;
+            font-size: 14px;
+            color: #232628; }
+          .login .loginMain .mainCon .loginBox .tabs .attr2 .inputBox .password {
+            position: relative; }
+          .login .loginMain .mainCon .loginBox .tabs .attr2 .inputBox .btn {
+            width: 100px;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            right: -1px;
+            background-color: #cccccc; }
+          .login .loginMain .mainCon .loginBox .tabs .attr2 .inputBox .flie {
+            height: 30px; }
+        .login .loginMain .mainCon .loginBox .tabs .attr2 .flie {
+          font-size: 12px;
+          margin-bottom: 20px; }
+          .login .loginMain .mainCon .loginBox .tabs .attr2 .flie a {
+            color: #232628; }
+        .login .loginMain .mainCon .loginBox .tabs .attr2 .login-btn {
+          margin-bottom: 20px;
+          height: 42px;
+          line-height: 42px;
+          font-size: 14px;
+          color: #fff;
+          background-color: #ff6a00;
+          width: 100%;
+          border-radius: 21px;
+          text-align: center; }
+        .login .loginMain .mainCon .loginBox .tabs .attr2 .form-tip {
+          color: #232628;
+          font-size: 12px; }
+
+/*# sourceMappingURL=login.css.map */
